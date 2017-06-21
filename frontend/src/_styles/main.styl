@@ -4,6 +4,7 @@
 // Import Modules
 @import './grid/flexbox-grid';
 @import 'modules/button';
+@import 'modules/input';
 @import 'modules/heading';
 @import 'modules/form';
 
@@ -16,60 +17,57 @@
     outline 1px dashed green
 
 .ui-header
-  padding 33px 0
-  z-index 10
-  position absolute
-  width 100%
+    padding 33px 0
+    z-index 10
+    position absolute
+    width 100%
 
-  &__content
-    display flex
-    align-items center
+    &__content
+        display flex
+        align-items center
 
 .ui-menu
-  display flex
-  justify-content space-between
+    display flex
+    justify-content space-between
 
-  &__link
-    font-family 'Open Sans'
-    font-size 14px
-    color #8893bf
-    text-align left
-    line-height 24px
-    text-decoration none
+    &__link
+        font-family 'Open Sans'
+        font-size 14px
+        color #8893bf
+        text-align left
+        line-height 24px
+        text-decoration none
 
 .ui-footer
-  background url('../images/footer-bg.png') no-repeat 50% 50%
-  background-size cover
-  padding 200px 0 30px 0
+    background url('../images/footer-bg.png') no-repeat 50% 100%
+    background-size cover
+    padding 200px 0 30px 0
 
-  &__copyright
-    border-top 1px solid #373365
-    padding-top 30px
-    margin-top 140px
-    color #4c457b
+    &__copyright
+        border-top 1px solid #373365
+        padding-top 30px
+        margin-top 140px
+        color #4c457b
 
 .ui-description
-  padding 30px 0 90px
-  color #cfcde1
-  font-family 'OpenSans'
-  font-size 14px
-  line-height 24px
+    padding 30px 0 90px
+    color #cfcde1
+    font-family 'OpenSans'
+    font-size 14px
+    line-height 24px
 
 .ui-first-screen
-  background #edf2fe url('../images/first-screen-bg.png') no-repeat 50% 50%
-  background-size cover
-  padding-top 290px
+    background #edf2fe url('../images/first-screen-bg.png') no-repeat 50% 50%
+    background-size cover
+    padding-top 290px
+    padding-bottom 354px
+    position relative
 
-  &__img
-    padding-top 144px
-    transform transition(0, -50%)
-    display flex
-    align-items flex-end
-
-.ui-flex
-  display flex
-  justify-content center
+    &__img
+        transform translate(0, 50%)
+        position absolute
+        bottom 0
 
 .ui-activities
-  background #edf2fe
-  padding 50px 0
+    background #edf2fe
+    padding 270px 0 50px

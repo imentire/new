@@ -1,35 +1,36 @@
 .ui-button
-  font-family 'Open Sans'
-  font-size 14px
-  line-height 24px
-  border-radius 23px
-  cursor pointer
-  display flex
-  align-items center
-  justify-content center
-  width 220px
-  height 45px
-  text-align center
-  border 2px solid #676ea0
+    font-family 'Open Sans'
+    font-size 14px
+    line-height 24px
+    border-radius 23px
+    cursor pointer
+    text-align center
+    bottom 0
+    display inline-block
 
-  &--transparent
+    &--default
+        padding 10px 25px 11px
+        min-width 240px
 
-    span
-      color #fff
-      padding-left 10px
+    &--transparent
+        display flex
+        align-items center
+        justify-content center
+        padding 8px 25px 9px
+        border 2px solid #676ea0
 
-  &--green
-    background-image linear-gradient(#5fa315 0%, #80d325 100%)
-    color #fff
-    border none
-    margin 0 10px
+        span
+            color #fff
+            padding-left 10px
 
-  &--blue
-    background-image linear-gradient(#2956ba 0%, #2572d3 100%)
-    color #fff
-    border none
-    margin 0 10px
+    &--green
+        background-image linear-gradient(#5fa315 0%, #80d325 100%)
+        color #fff
 
-  &--block
-    display flex
-    align-items center
+    &--blue
+        background-image linear-gradient(#2956ba 0%, #2572d3 100%)
+        color #fff
+
+    &--block
+        display flex
+        align-items center
