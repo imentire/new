@@ -3,6 +3,7 @@ block config
   //- Setup site's base URL to match the "baseUrl" key within `package.json`
   //- Otherwise default to relative pathing
   - var baseUrl = config.baseUrl || './'
+  - var pageClass = config.pageClass || 'default'
 
 doctype html
 
@@ -19,15 +20,66 @@ head
   title new
   meta(name='description', content= 'A new Yeogurt application')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet")
+  
   block stylesheets
     link(rel='stylesheet', href= baseUrl + 'styles/main.css')
 
-body
+body.ui-page
   <!--[if lt IE 9]>
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  
+  header.ui-header 
+    .l-grid.l-grid--container
+      .l-row.ui-header__content
+          .l-col.l-col--xs-3
+            .ui-header__logo
+          .l-col.l-col--xs-6
+            .ui-header__menu
+                nav.ui-menu
+                  .ui-menu__item
+                    a.ui-menu__link(href="#") Главная 
+                  .ui-menu__item
+                    a.ui-menu__link(href="#") Услуги 
+                  .ui-menu__item
+                    a.ui-menu__link(href="#") Цены 
+                  .ui-menu__item
+                    a.ui-menu__link(href="#") Портфолио 
+                  .ui-menu__item
+                    a.ui-menu__link(href="#") О нас 
+                  .ui-menu__item
+                    a.ui-menu__link(href="#") Контакты
+          .l-col.l-col--xs-3
+            .ui-header__button
+              a.ui-button.ui-button--transparent.ui-button--block
+                img(src="/images/icon/mail.png") 
+                span Свяжитесь с нами
 
-  block content
+  main.ui-content
+    block content
+    
+  footer.ui-footer
+    .l-grid.l-grid--container
+      .l-row
+        .l-col.l-col--xs-12.h-text--xs-center
+          h1.ui-heading.ui-heading--green.ui-heading--lvl1 СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ
+      .l-row
+        .l-col.l-col--xs-12.h-text--xs-center
+          .ui-description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. #[br]Aenean commodo ligula eget dolor. Aenean massa.
+      .l-row
+        .l-col.l-col--xs-12.h-text--xs-center
+          form.ui-form-request
+            input.ui-input(type="text", placeholder="Ваше имя")
+            input.ui-input(type="text", placeholder="Ваш e-mail")
+            input.ui-input(type="text", placeholder="Номер телефона")
+      .l-row
+        .l-col.l-col--xs-12.h-text--xs-center.ui-flex
+          a.ui-button.ui-button--green Отправить заявку
+      .l-row
+        .l-col.l-col--xs-12.h-text--xs-center
+          .ui-footer__copyright Все права защищены. © 2017 Company Name
+            
 
   block scripts
     script(src= baseUrl + 'scripts/main.js')

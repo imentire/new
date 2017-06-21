@@ -3,17 +3,21 @@ extends _layouts/base
 include _modules/link/link
 
 block content
+  .ui-first-screen
     .l-grid.l-grid--container
-        .l-row
-            .l-col.l-col--xs-6 1
-            .l-col.l-col--xs-6 2
-    .container
-        .yeogurt-info
-            h1 Welcome to Yeogurt!
-            p.
-                Take a look at the
-                #[+link({text: 'documentation'})(href='https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---')]
-                and start mixing up something awesome.
-            p
-                img.logo(src="images/yeogurt-swirl.png", width="75px")
-    code.version v1.5.3
+      .l-row
+        .l-col.l-col--xs-12.h-text--xs-center
+          h1.ui-heading.ui-heading--white.ui-heading--lvl1 ЗАГОЛОВОК ДЛЯ ЦЕЛЕВОЙ АУДИТОРИИ
+        .l-col.l-col--xs-12.h-text--xs-center
+          .ui-description Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean #[br] massa. Cum sociis natoque penatibus et magnis.
+        .l-col.l-col--xs-12.h-text--xs-center.ui-flex
+          a.ui-button.ui-button--green Рассчитать стоимость
+          a.ui-button.ui-button--blue Узнать подробнее
+        .l-col.l-col--xs-12.h-text--xs-center
+          .ui-first-screen__img
+            img(src="/images/phone.png") 
+  .ui-activities
+    .l-grid.l-grid--container
+      .l-row
+        .l-col.l-col--xs-12.h-text--xs-center
+          h1.ui-heading.ui-heading--default.ui-heading--lvl1 ЧТО МЫ ДЕЛАЕМ?

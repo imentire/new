@@ -1,0 +1,41 @@
+.ui-heading
+  font-family 'Open Sans'
+  color #6a6971
+
+  &--white
+    color #fff
+
+  &--green
+    color #85db26
+
+  &--lvl1
+    font-size 41px
+    text-transform uppercase
+    font-weight lighter
+    line-height 60px
+    position relative
+    margin 0
+
+    &:after
+      content ''
+      width 140px
+      height 7px
+      position absolute
+      display block
+      background linear-gradient(to right,#5a568d 70%,rgba(255, 255, 255, 0) 70%,rgba(255, 255, 255, 0) 80%,#5a568d 80%)
+      left 50%
+      margin-left -70px
+      margin-top 20px
+
+  &--default
+
+    &:after
+      content ''
+      width 140px
+      height 7px
+      position absolute
+      display block
+      background linear-gradient(to right,#676767 70%,rgba(255, 255, 255, 0) 70%,rgba(255, 255, 255, 0) 80%,#676767 80%)
+      left 50%
+      margin-left -70px
+      margin-top 20px
