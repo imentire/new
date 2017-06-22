@@ -1,5 +1,7 @@
 // Normalize Styles
 @import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.css';
 
 // Import Modules
 @import './grid/flexbox-grid';
@@ -7,6 +9,8 @@
 @import 'modules/input';
 @import 'modules/heading';
 @import 'modules/form';
+@import 'modules/activities-cart';
+@import 'modules/slider';
 
 // Box sizing partial styles
 // Apply a natural box layout model to all elements
@@ -50,11 +54,14 @@
         color #4c457b
 
 .ui-description
-    padding 30px 0 90px
+    padding 50px 0 90px
     color #cfcde1
     font-family 'OpenSans'
     font-size 14px
     line-height 24px
+
+    &--taupegray
+        color #8f8e94
 
 .ui-first-screen
     background #edf2fe url('../images/first-screen-bg.png') no-repeat 50% 50%
@@ -70,4 +77,14 @@
 
 .ui-activities
     background #edf2fe
-    padding 270px 0 50px
+    padding 270px 0 0
+
+    &__bg
+      background #edf2fe url('../images/activities-bg.png') no-repeat 50% 50%
+      background-size cover
+      height 750px
+
+.ui-confidence
+
+    &__slider
+        padding 50px 0
