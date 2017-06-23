@@ -19,6 +19,7 @@ $(function() {
         loop: true,
         autoplay: true,
         dots: true,
+        dotsContainer: '#customDots',
         responsive: {
             0: {
                 items: 1

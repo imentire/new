@@ -1,12 +1,29 @@
-.js-confidence-carousel .owl-dots .owl-dot
-    span
-        background #e8edfa
-        border 5px solid #fff
-        width 20px
-        height 20px
+.owl-theme-confidence
+    .owl-item
+        img
+            width auto
+            margin 0 auto
+            display inline-block
+            max-width 100%
 
-.js-confidence-carousel .owl-dots .owl-dot.active span, .js-confidence-carousel .owl-dots .owl-dot:hover span
-    background #fff
-    width 20px
-    height 20px
-    border 3px solid #84d030
+    .owl-dots
+        .owl-dot
+            span
+                background #e8edfa
+                border 5px solid #fff
+                width 20px
+                height 20px
+
+            &.active span
+            &:hover span
+                background #fff
+                width 20px
+                height 20px
+                border 3px solid #84d030
+
+     .owl-stage
+        align-items center
+        display flex
+
+    .owl-nav.disabled + .owl-dots
+        margin-top 0
