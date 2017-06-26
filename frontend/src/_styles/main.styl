@@ -11,6 +11,7 @@
 @import 'modules/form';
 @import 'modules/activities-cart';
 @import 'modules/slider';
+@import 'modules/choice-cart';
 
 // Box sizing partial styles
 // Apply a natural box layout model to all elements
@@ -96,6 +97,47 @@
     &__slider
         padding 50px 0
 
+    &__line
+        background url('../images/confidence/line.png') no-repeat 50% 50%
+        background-size cover
+        height 327px
+
 .ui-confidence-slider-nav
     display flex
     align-items center
+
+.ui-choice
+
+    &__img
+        width 100%
+
+.ui-cooperation
+    background url('../images/cooperation-bg.png') no-repeat 50% 50%
+    background-size cover
+    padding 250px 0
+
+    &__option
+        border 7px solid rgba(255, 255, 255, 0.1)
+
+.ui-option
+    padding 50px 25px
+
+    &__list
+        font-family 'OpenSans'
+        font-size 128px
+        color rgba(255,255,255,0.1)
+        line-height 30px
+        font-weight bold
+        display flex
+        align-items center
+
+    &__description
+        font-family 'OpenSans'
+        font-size 13px
+        color #ffffff
+        line-height 24px
+        margin-left -57px
+
+    &__link
+        transform translate(0,50%)
+        bottom 0
