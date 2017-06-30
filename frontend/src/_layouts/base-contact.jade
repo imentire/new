@@ -1,0 +1,111 @@
+//- Custom Configuration
+block config
+    //- Setup site's base URL to match the "baseUrl" key within `package.json`
+    //- Otherwise default to relative pathing
+    - var baseUrl = config.baseUrl || './'
+    - var pageClass = config.pageClass || 'default'
+
+doctype html
+
+<!--[if lt IE 9]>
+<html class='lt-ie9 no-js' lang='en'>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<html class='no-js' lang='en'>
+<!--<![endif]-->
+
+head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title new
+    meta(name='description', content= 'A new Yeogurt application')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic", rel="stylesheet")
+    
+    block stylesheets
+        link(rel='stylesheet', href= baseUrl + 'styles/main.css')
+
+body.ui-page
+    <!--[if lt IE 9]>
+    <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    header.ui-header.ui-header-contact 
+        .l-grid.l-grid--container
+            .l-row.ui-header__content
+                    .l-col.l-col--xs-12.l-col--md-3
+                        .ui-header__logo
+                            img(src="/images/logo.png")
+                    .l-col.l-col--xs-12.l-col--md-6
+                        .ui-header__menu
+                                nav.ui-menu
+                                    .ui-menu__item
+                                        a.ui-menu__link(href="/") Главная 
+                                    .ui-menu__item
+                                        a.ui-menu__link(href="#") Услуги 
+                                    .ui-menu__item
+                                        a.ui-menu__link(href="#") Цены 
+                                    .ui-menu__item
+                                        a.ui-menu__link(href="#") Портфолио 
+                                    .ui-menu__item
+                                        a.ui-menu__link(href="/about/") О нас 
+                                    .ui-menu__item
+                                        a.ui-menu__link(href="/contact/") Контакты
+                    .l-col.l-col--xs-12.l-col--md-3
+                        a.ui-button.ui-button--transparentgrey.ui-button--block
+                            img(src="/images/icon/mail.png") 
+                            span Свяжитесь с нами
+
+    main.ui-content
+        block content
+        
+    footer.ui-footer-contact
+        .ui-relations
+            .l-grid.l-grid--container
+                .l-row
+                    .l-col.l-col--xs-12.h-text--xs-center
+                        h1.ui-heading.ui-heading--green.ui-heading--lvl1 Ждем Ваших вопросов и предложений
+                .l-row
+                    .l-col.l-col--xs-12.h-text--xs-center
+                        .ui-description Напишите нам и мы свяжемся с Вами
+                .l-row
+                    .l-col.l-col--xs-12.h-text--xs-center
+                        form.ui-form-relations
+                            .l-grid.l-grid--container
+                                .l-row.l-row--xs-center
+                                    .l-col.l-col--xs-12.l-col--md-4
+                                        input.ui-input.ui-input--default.ui-input--bg(type="text", placeholder="Ваше имя", style="background-image: url('/images/icon/name.png')")
+                                    .l-col.l-col--xs-12.l-col--md-4
+                                        input.ui-input.ui-input--default.ui-input--bg(type="text", placeholder="Ваш e-mail", style="background-image: url('/images/icon/e-mail.png')")
+                                    .l-col.l-col--xs-12.l-col--md-4
+                                        input.ui-input.ui-input--default.ui-input--bg(type="text", placeholder="Номер телефона", style="background-image: url('/images/icon/phone.png')")
+                                .l-row
+                                    .l-col.l-col--xs-12
+                                        textarea.ui-textarea.ui-textarea--default(type="text", placeholder="Опишите ваш вопрос", style="background-image: url('/images/icon/mail.png')")
+                .l-row
+                    .l-col.l-col--xs-12.h-text--xs-center
+                        a.ui-button.ui-button--default.ui-button--green Задать вопрос
+        .ui-news
+            .l-grid.l-grid--container
+                .l-row
+                    .l-col.l-col--xs-4
+                        .ui-news-cart
+                            .ui-news-cart__img 
+                                img(src="/images/news/1.png")
+                            .ui-news-cart__text 7 ПРИЧИН РАБОТАТЬ #[br] С "COMPANY NAME"
+                    .l-col.l-col--xs-4.h-text--xs-center
+                        .ui-news-cart
+                            .ui-news-cart__img
+                                img(src="/images/news/2.png")
+                            .ui-news-cart__text ДЛЯ КОГО НУЖНЫ #[br] МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
+                    .l-col.l-col--xs-4.h-text--xs-center
+                        .ui-news-cart
+                            .ui-news-cart__img
+                                img(src="/images/news/3.png")
+                            .ui-news-cart__text LOREM INPUT ALIMNI #[br] IPSUM DOLOR SIR AMET
+        .ui-footer-contact__copyright.ui-footer__copyright--contact Все права защищены. © 2017 Company Name
+
+    block scripts
+        script(src= baseUrl + 'scripts/main.js')
+
+</html>

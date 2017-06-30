@@ -1,0 +1,49 @@
+extends ../_layouts/base-contact
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    .ui-page-content
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    h1.ui-heading.ui-heading--glitter.ui-heading--lvl1 Контакты
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    .ui-description Аутсорс студия «Company Name»
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    .ui-contact
+                        .l-grid.l-grid--container
+                            .l-row
+                                .l-col.l-col--xs-4.h-text--xs-left
+                                    .ui-contact-block
+                                        .ui-contact-block__heading 
+                                            img(src="/images/icon/phone.png")
+                                            span Телефоны компании
+                                        .ui-contact-block__title Телефон в Москве:
+                                        .ui-contact-block__phone +7 (915) 999-99-99
+                                        .ui-contact-block__title Телефон в Санкт-Петербурге:
+                                        .ui-contact-block__phone +7 (915) 999-99-99
+                                .l-col.l-col--xs-4.h-text--xs-left
+                                    .ui-contact-block
+                                        .ui-contact-block__heading 
+                                            img(src="/images/icon/e-mail.png")
+                                            span Электронная почта
+                                        .ui-contact-block__title E-mail:
+                                        .ui-contact-block__text info@domainame.com
+                                        .ui-contact-block__title Техподдержка:
+                                        .ui-contact-block__text support@domainame.com
+                                .l-col.l-col--xs-4.h-text--xs-left
+                                    .ui-contact-block
+                                        .ui-contact-block__heading 
+                                            img(src="/images/icon/ofice.png")
+                                            span Центральный офис
+                                        .ui-contact-block__title Россия, г. Москва:
+                                        .ui-contact-block__text Графский переулок, дом 14
+                                        .ui-contact-block__title Россия, г. Санкт-Петербург:
+                                        .ui-contact-block__text Пр-т. Большевиков, дом 18
+    .ui-map
+        img(src="/images/map.png", width="100%", height="480px")
