@@ -45,5 +45,34 @@ block content
                                         .ui-contact-block__text Графский переулок, дом 14
                                         .ui-contact-block__title Россия, г. Санкт-Петербург:
                                         .ui-contact-block__text Пр-т. Большевиков, дом 18
-    .ui-map
-        img(src="/images/map.png", width="100%", height="480px")
+    .ui-map#map-canvas
+        
+    script(type="text/javascript").
+        ymaps.ready(init);
+
+        var myMap,
+            myPlacemark;
+
+        function init(){     
+            var myMap = new ymaps.Map("map-canvas", {
+                    center: [55.709305, 37.595591],
+                    zoom: 16,
+                    type: "yandex#map",
+                    controls: ['zoomControl'],
+                    behaviors: ['default']
+            });
+            myMap.behaviors.disable('scrollZoom');
+
+
+            var myPlacemark = new ymaps.Placemark(
+                [55.709305, 37.595591],
+                {},
+                {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/images/ymap.png',
+                    iconImageSize: [54, 83],
+                    iconImageOffset: [-27, -83]
+                }
+            );
+            myMap.geoObjects.add(myPlacemark);
+        }
