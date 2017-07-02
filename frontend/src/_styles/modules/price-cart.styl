@@ -1,0 +1,71 @@
+.ui-price-cart
+    font-family 'OpenSans'
+    padding 26px 13px
+
+    &__item
+        border-top 1px solid #edf1fb
+        border-bottom 1px solid #edf1fb
+        border-right 1px solid #edf1fb
+        border-left 1px solid #edf1fb
+        text-align center
+        cursor pointer
+        transition all .2s ease
+        position relative
+        margin-left -1px
+
+        &:before
+            content ''
+            display block
+            height calc(100% - 26px)
+            border-right 1px solid #edf1fb
+            position absolute
+            right -1px
+
+        &:hover
+            padding-top 36px
+            padding-bottom 36px
+            border-left-color #edf1fb
+            border-right-color #edf1fb
+            border-radius 5px
+
+            &:before
+                display none
+
+        &--first
+            border-left 1px solid #edf1fb
+            border-radius 10px 0 0 10px
+
+        &--last
+            border-right 1px solid #edf1fb
+            border-radius 0 10px 10px 0
+
+            &:before
+                display none
+
+
+    &__title
+        font-size 15px
+        color #5c657f
+        line-height 24px
+        font-weight bold
+
+    &__price
+        font-size 15px
+        color #458de1
+        line-height 24px
+        padding 17px 0
+        border-bottom 2px solid #e2e8f9
+
+        span
+            font-size 33px
+
+    &__list
+        display flex
+        justify-content center
+        padding 16px 0
+
+    &__description
+        font-size 12px
+        color #c2c6d1
+        line-height 24px
+        padding-bottom 24px
