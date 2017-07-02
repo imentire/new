@@ -1,0 +1,73 @@
+.ui-project-cart
+    border-radius 10px
+    margin-top 20px
+    transition all .2s ease
+
+    &__content
+        position relative
+
+    &__teg
+        position absolute
+        bottom 13px
+        left 5px
+        z-index 10
+
+        span
+            padding 9px
+            background #343942
+            border-radius 15px
+            color #c2c8d1
+            'OpenSans'
+            font-size 13px
+            color #c2c8d1
+            line-height 32px
+            margin 5px
+            border 2px solid #343942
+
+    &__description
+        position absolute
+        z-index 9
+        top 0
+        left 0
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        height 100%
+        background-color rgba(43, 41, 92, 0.9)
+        border-radius 10px
+        opacity 0
+
+    &__title
+        font-family 'OpenSans'
+        font-size 14px
+        color #ffffff
+        line-height 24px
+        text-transform uppercase
+        position relative
+        padding-bottom 10px
+
+        &:after
+            content ''
+            width 70%
+            height 2px
+            position absolute
+            display block
+            background #8684ae
+            left 15%
+            bottom 0
+
+    &__text
+        font-family 'OpenSans'
+        font-size 13px
+        color #dddcec
+        line-height 24px
+        font-style italic
+        padding 20px 30px
+
+    &:hover &__description
+        opacity 1
+
+    &:hover &__teg span
+        background none
+        border 2px solid #8684ae
