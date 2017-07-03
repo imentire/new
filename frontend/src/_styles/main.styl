@@ -35,9 +35,13 @@
     padding 33px 0
     width 100%
 
-    &__content
-        display flex
-        align-items center
+    &__menu
+        padding-top 15px
+        padding-bottom 15px
+
+        @media(min-width: 768px)
+            padding-top 0
+            padding-bottom 0
 
 .ui-header-main
     z-index 10
@@ -84,7 +88,7 @@
 .ui-description
     padding 50px 0 90px
     color #cfcde1
-    font-family 'OpenSans'
+    font-family 'Open Sans'
     font-size 14px
     line-height 24px
 
@@ -192,13 +196,20 @@
     margin 30px 0
 
 .ui-page-content
-    padding-top 115px
+    padding-top 60px
     position relative
+
+    @media(min-width: 768px)
+        padding-top 115px
 
 .ui-contact
     border 9px solid #f2f2f2
-    padding 50px 30px
-    margin-bottom 80px
+    padding 25px 15px
+    margin-bottom 40px
+
+    @media(min-width: 544px)
+        padding 50px 30px
+        margin-bottom 80px
 
 .ui-map
     height 480px

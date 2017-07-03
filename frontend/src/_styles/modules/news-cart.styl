@@ -2,6 +2,12 @@
     display flex
     align-items center
     justify-content center
+    flex-wrap wrap
+    margin-top 25px
+
+    @media(min-width: 768px)
+        flex-wrap nowrap
+        margin-top 0
 
     &__img
         height 80px
@@ -9,11 +15,14 @@
         border-radius 50%
 
     &__text
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 13px
         color #5d5d64
         line-height 19px
         text-transform uppercase
         font-weight bold
-        text-align left
-        padding-left 20px
+        width 100%
+
+        @media(min-width: 768px)
+            padding-left 20px
+            width auto
