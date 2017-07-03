@@ -15,7 +15,9 @@
 @import 'modules/choice-cart';
 @import 'modules/project-cart';
 @import 'modules/work-cart';
+@import 'modules/development-cart';
 @import 'modules/news-cart';
+@import 'modules/order-cart';
 @import 'modules/price-cart';
 @import 'modules/result-cart';
 @import 'modules/about-info-cart';
@@ -98,6 +100,9 @@
     &--md
         padding 35px 0
 
+    span
+        font-weight bold
+
 .ui-first-screen
     background #edf2fe url('../images/first-screen-bg.png') no-repeat 50% 50%
     background-size cover
@@ -152,6 +157,7 @@
 
     &__option
         border 7px solid rgba(255, 255, 255, 0.1)
+        margin 20px 0
 
 .ui-option
     padding 50px 25px
@@ -252,3 +258,38 @@
 
 .ui-filter
     padding-bottom 20px
+
+.ui-desktop
+    background #edf2fe url('../images/desktop-bg@2x.png') no-repeat 50% 50%
+    background-size cover
+    padding 150px 0 300px
+
+.ui-order
+    background #edf2fe
+    padding-bottom 100px
+
+.ui-make
+    background url('../images/make-bg@2x.png') no-repeat 50% 50%
+    background-size cover
+    padding 200px 0
+
+    &__option
+        border 7px solid rgba(255, 255, 255, 0.1)
+        margin 20px 0
+
+.ui-time
+    display flex
+    justify-content center
+    align-items center
+
+    span
+        padding-left 10px
+        font-family 'OpenSans'
+        font-size 14px
+        color #84d030
+        line-height 24px
+
+.ui-development
+
+    &__block
+        padding 100px 10px 50px

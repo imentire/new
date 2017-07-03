@@ -28,6 +28,13 @@
             margin-left -70px
             bottom 0
 
+    &--left
+
+        &:after
+            left 0
+            margin-left 0
+
+
     &--default
 
         &:after
@@ -68,7 +75,30 @@
 
     &--lvl3
         font-family 'OpenSans'
+        font-size 29px
+        color #6a6971
+        line-height 42px
+        text-transform uppercase
+        font-weight lighter
+        position relative
+        padding-bottom 20px
+        margin 0
+
+        &:after
+            content ''
+            width 140px
+            height 7px
+            position absolute
+            display block
+            background linear-gradient(to right,#e8edfa 70%,rgba(255, 255, 255, 0) 70%,rgba(255, 255, 255, 0) 80%,#e8edfa 80%)
+            bottom 0
+            left 50%
+            margin-left -70px
+
+    &--lvl4
+        font-family 'OpenSans'
         font-size 24px
         color #fefefe
         line-height 32px
         font-weight bold
+        margin 0

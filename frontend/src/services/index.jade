@@ -1,0 +1,158 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+    .ui-desktop
+        .l-grid.l-grid--container
+            .l-row.l-row--xs-middle
+                .l-col.l-col--xs-6.h-text--xs-center
+                    .ui-desktop__img
+                        img(src="/images/comp.png") 
+                .l-col.l-col--xs-6
+                    h1.ui-heading.ui-heading--white.ui-heading--lvl1.ui-heading--left Разработка приложений #[br] под десктоп (PC, Mac) 
+                    .ui-description.ui-description--md 
+                        span Инструмент для автоматизации бизнеса. #[br]#[br]
+                        |#{' '}  Мы занимаемся разработкой программ для IOS с 2010 года и знаем, как делать приложения, которые не только нравяться людям, но и приносят реальные, измеримые результаты
+                    a.ui-button.ui-button--md.ui-button--green Оставить заявку
+    .ui-order
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    h1.ui-heading.ui-heading--lavender.ui-heading--lvl1 Почему стоит заказывать у нас?
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    .ui-description.ui-description--grey Lorem ipsum dolor sit amet, consectetuer adipiscing elit aenean commodo ligula eget dolor.
+            .l-row
+                .l-col.l-col--xs-3.h-text--xs-center
+                    .ui-order-cart
+                        .ui-order-cart__img
+                            img(src="/images/icon/analytics.png") 
+                        .ui-order-cart__title Аналитика
+                        .ui-order-cart__description Вы пролучите решение на #[br] основе анализа билнеса и #[br] аудитории
+                .l-col.l-col--xs-3.h-text--xs-center
+                    .ui-order-cart
+                        .ui-order-cart__img
+                            img(src="/images/icon/experience.png") 
+                        .ui-order-cart__title Опыт
+                        .ui-order-cart__description Опыт реплизации сложных #[br] проектов качественно и в срок
+                .l-col.l-col--xs-3.h-text--xs-center
+                    .ui-order-cart
+                        .ui-order-cart__img
+                            img(src="/images/icon/guarantees.png") 
+                        .ui-order-cart__title Гарантии
+                        .ui-order-cart__description Гарантируем выполнения #[br] обязательств с помощью #[br] договора
+                .l-col.l-col--xs-3.h-text--xs-center
+                    .ui-order-cart
+                        .ui-order-cart__img
+                            img(src="/images/icon/value.png") 
+                        .ui-order-cart__title Стоимость
+                        .ui-order-cart__description Разработка приложений #[br] Android, по оптимальной цене #[br] на рынке
+    .ui-make
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    h1.ui-heading.ui-heading--white.ui-heading--lvl1 КАК МЫ ЭТО ДЕЛАЕМ?
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center    
+                    .ui-description.ui-description--md За годы работы мы выработали оптимальный вариант сотрудничества с заказчиком.
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center   
+                    .ui-make__slider
+                        .ui-make-slider.owl-carousel.owl-theme.owl-theme-make
+                            .l-grid.l-grid--container
+                                .l-row.l-row--xs-center.l-row--xs-middle
+                                    .l-col.l-col--xs-1.l-col--md-auto
+                                        .ui-make-slider-nav
+                                            a.ui-make-slider-nav__arrow.js-make-carousel-prew
+                                                img(src="/images/icon/arrow-left.png")
+                                    .l-col.l-col--xs-1.l-col--md-auto
+                                        .ui-make__slide.js-make-carousel
+                                            .l-col.l-col--xs-12.l-col--xs-middle
+                                                img.ui-make-slider__content(src="/images/make.png")
+                                    .l-col.l-col--xs-1.l-col--md-auto
+                                        .ui-make-slider-nav        
+                                            a.ui-make-slider-nav__arrow.js-make-carousel-next
+                                                img(src="/images/icon/arrow-rigth.png")
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    h4.ui-heading.ui-heading--white.ui-heading--lvl4 Анализ требований и рынка
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    .ui-time
+                        img(src="/images/icon/time.png")
+                        span 1-4 недели
+            .l-row.ui-make__option
+                .l-col.l-col--xs-12
+                    .ui-option
+                        .ui-option__list 1
+                            .ui-option__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    a.ui-button.ui-button--default.ui-button--blue Начать сотрудничать
+    .ui-development
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    h3.ui-heading.ui-heading--white.ui-heading--lvl3 Разработка Десктоп приложения в #[br] Company name это:
+            .l-row.l-row--xs-middle.ui-development__block
+                .l-col.l-col--xs-6.h-text--xs-center
+                    img(src="/images/development.png")
+                .l-col.l-col--xs-5.l-col--xs-offset-1
+                    .ui-development-cart
+                        .ui-development-cart__img
+                            img(src="/images/icon/software.png")
+                        .ui-development-cart__content 
+                            .ui-development-cart__title Качественное ПО
+                            .ui-development-cart__description От проектирования до реализаии сложных функций до публикации в Appstore
+                    .ui-development-cart
+                        .ui-development-cart__img
+                            img(src="/images/icon/integration.png")
+                        .ui-development-cart__content
+                            .ui-development-cart__title Системная интеграция
+                            .ui-development-cart__description От проектирования до реализаии сложных функций до публикации в Appstore
+                    .ui-development-cart
+                        .ui-development-cart__img
+                            img(src="/images/icon/result.png")
+                        .ui-development-cart__content
+                            .ui-development-cart__title Ориентация на результат
+                            .ui-development-cart__description От проектирования до реализаии сложных функций до публикации в Appstore
+                    .ui-development-cart
+                        .ui-development-cart__img
+                            img(src="/images/icon/guarantee.png")
+                        .ui-development-cart__content
+                            .ui-development-cart__title Гарантия качества
+                            .ui-development-cart__description От проектирования до реализаии сложных функций до публикации в Appstore
+    .ui-confidence
+        .ui-confidence__line      
+    .ui-Our-new-work
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    h1.ui-heading.ui-heading--glitter.ui-heading--lvl1 НАШИ НОВЫЕ РАБОТЫ
+            .l-row
+                .l-col.l-col--xs-4.h-text--xs-center
+                    .ui-work-cart
+                        .ui-work-cart__img
+                            img(src="/images/our-work/work1.png")
+                        .ui-work-cart__title Subway Surfers
+                        .ui-work-cart__description IOS app
+                .l-col.l-col--xs-4.h-text--xs-center
+                    .ui-work-cart
+                        .ui-work-cart__img
+                            img(src="/images/our-work/work1.png")
+                        .ui-work-cart__title Subway Surfers
+                        .ui-work-cart__description IOS app
+                .l-col.l-col--xs-4.h-text--xs-center
+                    .ui-work-cart
+                        .ui-work-cart__img
+                            img(src="/images/our-work/work1.png")
+                        .ui-work-cart__title Subway Surfers
+                        .ui-work-cart__description IOS app
+            .l-row.l-row--xs-center
+                .l-col.l-col--xs-4.h-text--xs-center
+                    a.ui-button.ui-button--default.ui-button--transparentgrey
+                        img(src="/images/icon/work.png") 
+                        span Посмотреть все работы      
