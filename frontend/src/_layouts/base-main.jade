@@ -32,29 +32,29 @@ body.ui-page
     
     header.ui-header.ui-header-main 
         .l-grid.l-grid--container
-            .l-row.ui-header__content
-                    .l-col.l-col--xs-12.l-col--md-3
-                        .ui-header__logo
-                            img(src="/images/logo.png")
-                    .l-col.l-col--xs-12.l-col--md-6
-                        .ui-header__menu
-                                nav.ui-menu
-                                    .ui-menu__item
-                                        a.ui-menu__link(href="/") Главная 
-                                    .ui-menu__item
-                                        a.ui-menu__link(href="/services/") Услуги 
-                                    .ui-menu__item
-                                        a.ui-menu__link(href="/prices/") Цены 
-                                    .ui-menu__item
-                                        a.ui-menu__link(href="/portfolio/") Портфолио 
-                                    .ui-menu__item
-                                        a.ui-menu__link(href="/about/") О нас 
-                                    .ui-menu__item
-                                        a.ui-menu__link(href="/contact/") Контакты
-                    .l-col.l-col--xs-12.l-col--md-3
-                        a.ui-button.ui-button--transparent.ui-button--block
-                            img(src="/images/icon/mail.png") 
-                            span Свяжитесь с нами
+            .l-row.l-row--xs-middle
+                .l-col.l-col--xs-12.l-col--md-3.h-text--xs-center.h-text--md-left
+                    .ui-header__logo
+                        img(src="/images/logo.png")
+                .l-col.l-col--xs-12.l-col--md-6
+                    .ui-header__menu
+                            nav.ui-menu
+                                .ui-menu__item
+                                    a.ui-menu__link(href="/") Главная 
+                                .ui-menu__item
+                                    a.ui-menu__link(href="/services/") Услуги 
+                                .ui-menu__item
+                                    a.ui-menu__link(href="/prices/") Цены 
+                                .ui-menu__item
+                                    a.ui-menu__link(href="/portfolio/") Портфолио 
+                                .ui-menu__item
+                                    a.ui-menu__link(href="/about/") О нас 
+                                .ui-menu__item
+                                    a.ui-menu__link(href="/contact/") Контакты
+                .l-col.l-col--xs-12.l-col--md-3
+                    a.ui-button.ui-button--transparent.ui-button--block
+                        img(src="/images/icon/mail.png") 
+                        span Свяжитесь с нами
 
     main.ui-content
         block content
