@@ -1,0 +1,131 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../'
+
+block content
+    .ui-prognostore
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12
+                    h1.ui-heading.ui-heading--white.ui-heading--lvl0 Prognostore
+            .l-row
+                .l-col.l-col--xs-12
+                    .ui-description Комплексное ПО для внедрения бизнеса
+    .ui-progect-logo
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-5
+                    .ui-progect-logo__img
+                        img(src="/images/portfolio/detail/logo.png") 
+                .l-col.l-col--xs-7
+                    .ui-progect-logo__content
+                        .ui-progect-logo__icon
+                            img.ui-progect-icon(src="/images/icon/comp.png") 
+                            img.ui-progect-icon(src="/images/icon/android.png") 
+                            img.ui-progect-icon(src="/images/icon/apple.png") 
+                        .ui-progect-logo__client Клиент:
+                            span &nbsp стартап из Норвегии/Великобритании
+                        .ui-progect-logo__works Список работ:
+                            ul.ui-step-works
+                                li.ui-step-works__item Аналитика
+                                li.ui-step-works__item Ux/Ux дизайн
+                                li.ui-step-works__item Разработка
+                                li.ui-step-works__item QA и тестирование
+    .ui-screenshot
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    a.ui-link(href="#") 
+                        img(src="/images/icon/loading.png") 
+                        span www.days.com
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    img(src="/images/portfolio/detail/screenshot.png") 
+    .ui-site-info
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-left
+                    h3.ui-heading.ui-heading--lvl3.ui-heading--left Задача
+            .l-row
+                .l-col.l-col--xs-6.h-text--xs-left
+                    .ui-description.ui-description--grey 
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .l-col.l-col--xs-6.h-text--xs-left
+                    .ui-description.ui-description--grey 
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .ui-photo
+        img.ui-image.ui-image--responsive(src="/images/portfolio/detail/photo.png") 
+    .ui-site-info
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-6.h-text--xs-left
+                    h3.ui-heading.ui-heading--lvl3.ui-heading--left Решение
+                    .ui-description.ui-description--grey 
+                        p.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .l-col.l-col--xs-6.h-text--xs-left
+                    h3.ui-heading.ui-heading--lvl3.ui-heading--left Особенности
+                    .ui-description.ui-description--grey 
+                        ul.ui-step-works.ui-step-works--grey
+                            li.ui-step-works__item Аналитика
+                            li.ui-step-works__item Ux/Ux дизайн
+                            li.ui-step-works__item Разработка
+                            li.ui-step-works__item QA и тестирование
+    .ui-photo
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    img.ui-image.ui-image--responsive(src="/images/portfolio/detail/presentation.png") 
+            .l-row.l-row--xs-middle
+                .l-col.l-col--xs-6.h-text--xs-center
+                    .ui-clock 4900+ 
+                        span часов работы
+                .l-col.l-col--xs-6.h-text--xs-center
+                    .ui-users 10000+ #[br]
+                        span Зарегистрированных #[br] пользователей
+    .ui-confidence
+        .ui-confidence__line 
+    .ui-Our-new-work
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    h1.ui-heading.ui-heading--glitter.ui-heading--lvl1 НАШИ НОВЫЕ РАБОТЫ
+            .l-row
+                .l-col.l-col--xs-12.l-col--md-4.h-text--xs-center
+                    .ui-work-cart
+                        .ui-work-cart__img
+                            img.ui-image.ui-image--responsive(src="/images/our-work/work1.png")
+                        .ui-work-cart__title Subway Surfers
+                        .ui-work-cart__description IOS app
+                .l-col.l-col--xs-12.l-col--md-4.h-text--xs-center
+                    .ui-work-cart
+                        .ui-work-cart__img
+                            img.ui-image.ui-image--responsive(src="/images/our-work/work1.png")
+                        .ui-work-cart__title Subway Surfers
+                        .ui-work-cart__description IOS app
+                .l-col.l-col--xs-12.l-col--md-4.h-text--xs-center
+                    .ui-work-cart
+                        .ui-work-cart__img
+                            img.ui-image.ui-image--responsive(src="/images/our-work/work1.png")
+                        .ui-work-cart__title Subway Surfers
+                        .ui-work-cart__description IOS app
+            .l-row.l-row--xs-center
+                .l-col.l-col--xs-12.l-col--md-4.h-text--xs-center
+                    a.ui-button.ui-button--transparentgrey.ui-button--default
+                        img(src="/images/icon/work.png") 
+                        span Посмотреть все работы
+            
+    

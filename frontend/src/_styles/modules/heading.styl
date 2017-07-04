@@ -8,6 +8,25 @@
     &--green
         color #85db26
 
+    &--lvl0
+        font-size 41px
+        text-transform uppercase
+        font-weight lighter
+        line-height 60px
+        position relative
+        margin 0
+        padding-bottom 27px
+
+        &:after
+            content ''
+            width 140px
+            height 7px
+            position absolute
+            display block
+            background linear-gradient(to right,#5a568d 70%,rgba(255, 255, 255, 0) 70%,rgba(255, 255, 255, 0) 80%,#5a568d 80%)
+            bottom 0
+            left 0
+
     &--lvl1
         font-size 41px
         text-transform uppercase
@@ -33,7 +52,6 @@
         &:after
             left 0
             margin-left 0
-
 
     &--default
 
@@ -94,6 +112,12 @@
             bottom 0
             left 50%
             margin-left -70px
+
+    &--left
+
+        &:after
+            left 0
+            margin-left 0
 
     &--lvl4
         font-family 'OpenSans'
