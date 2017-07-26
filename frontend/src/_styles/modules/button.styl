@@ -59,7 +59,14 @@
     &--blue
         background-image linear-gradient(#2956ba 0%, #2572d3 100%)
         color #fff
+        transition all .2s ease
 
     &--block
         display flex
         align-items center
+
+    &--price
+        text-decoration none
+
+        &:before
+            content attr(data-label-normal)

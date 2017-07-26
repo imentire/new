@@ -1,17 +1,27 @@
 .ui-price-cart
-    font-family 'OpenSans'
+    font-family 'Open Sans'
     padding 26px 13px
 
     &__item
-        border-top 1px solid #edf1fb
-        border-bottom 1px solid #edf1fb
-        border-right 1px solid #edf1fb
-        border-left 1px solid #edf1fb
         text-align center
         cursor pointer
         transition all .2s ease
         position relative
-        margin-left -1px
+
+        &:after
+            content ''
+            display block
+            position absolute
+            width 100%
+            height 100%
+            left 0
+            top 0
+            border-top 1px solid #edf1fb
+            border-bottom 1px solid #edf1fb
+            border-right 1px solid rgba(255, 255, 255, 0)
+            border-left 1px solid rgba(255, 255, 255, 0)
+            transition all .2s ease
+            background-position top right
 
         &:before
             content ''
@@ -19,25 +29,49 @@
             height calc(100% - 26px)
             border-right 1px solid #edf1fb
             position absolute
+            z-index 0
             right -1px
 
-        &:hover
-            padding-top 36px
-            padding-bottom 36px
-            border-left-color #edf1fb
-            border-right-color #edf1fb
-            border-radius 5px
+        &--active
+            & ^[0]__price
+                position relative
+                z-index 2
+
+            .ui-button--price
+                background-image linear-gradient(#2956ba 0%, #2572d3 100%)
+
+                &:before
+                    content attr(data-label-hover)
+            &:after
+                padding-top 36px
+                padding-bottom 36px
+                border-left-color #edf1fb
+                border-right-color #edf1fb
+                border-radius 5px
+                top -17px
+                bottom -17px
+                height calc(100% + 34px)
+                box-shadow 0 0 12px 0 rgba(148, 154, 186, .17)
+                left -20px
+                right -20px
+                width calc(100% + 40px)
+                background-color #fff
+                background-image url('/images/price-angle.png')
+                background-repeat no-repeat
+                z-index 1
 
             &:before
                 display none
 
         &--first
-            border-left 1px solid #edf1fb
-            border-radius 10px 0 0 10px
+            &:after
+                border-left 1px solid #edf1fb
+                border-radius 10px 0 0 10px
 
         &--last
-            border-right 1px solid #edf1fb
-            border-radius 0 10px 10px 0
+            &:after
+                border-right 1px solid #edf1fb
+                border-radius 0 10px 10px 0
 
             &:before
                 display none
@@ -48,6 +82,8 @@
         color #5c657f
         line-height 24px
         font-weight bold
+        position relative
+        z-index 2
 
     &__price
         font-size 15px
@@ -62,10 +98,18 @@
     &__list
         display flex
         justify-content center
+        position relative
         padding 16px 0
+        z-index 2
 
     &__description
         font-size 12px
         color #c2c6d1
         line-height 24px
         padding-bottom 24px
+        position relative
+        z-index 2
+
+    &__button
+        position relative
+        z-index 2

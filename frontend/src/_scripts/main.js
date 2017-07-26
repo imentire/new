@@ -8,8 +8,27 @@ require('owl.carousel');
 var Link = require('../_modules/link/link');
 
 $(function() {
-  new Link(); // Activate Link modules logic
-  console.log('Welcome to Yeogurt!');
+    new Link(); // Activate Link modules logic
+    $('.ui-price-cart').hover(function() {
+        $('.ui-price-cart').removeClass('ui-price-cart__item--active');
+        $(this).addClass('ui-price-cart__item--active');
+    });
+});
+$(function() {
+    var owlMake = $('.js-make-carousel');
+    owlMake.owlCarousel({
+        items: 1,
+        loop: true,
+        dotData: true,
+        dots: true,
+        dotsContainer: '.ui-make-slider__dots'
+    });
+    $('.js-make-carousel-next').on('click', function() {
+        owlMake.trigger('next.owl.carousel');
+    });
+    $('.js-make-carousel-prew').on('click', function() {
+        owlMake.trigger('prev.owl.carousel');
+    });
 });
 
 $(function() {
@@ -23,6 +42,9 @@ $(function() {
         responsive: {
             0: {
                 items: 1
+            },
+            544: {
+                items: 3
             },
             940: {
                 items: 4

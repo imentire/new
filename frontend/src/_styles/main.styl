@@ -29,7 +29,6 @@
 *:before,
 *:after
     box-sizing border-box
-    outline 1px dashed green
 
 .ui-header
     padding 33px 0
@@ -181,6 +180,10 @@
     background url('../images/cooperation-bg.png') no-repeat 50% 50%
     background-size cover
     padding 250px 0
+    position relative
+
+    &__slider
+        padding-bottom 45px
 
     &__option
         border 7px solid rgba(255, 255, 255, 0.1)
@@ -190,7 +193,7 @@
     padding 50px 25px
 
     &__list
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 128px
         color rgba(255,255,255,0.1)
         line-height 30px
@@ -199,7 +202,7 @@
         align-items center
 
     &__description
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 13px
         color #ffffff
         line-height 24px
@@ -259,7 +262,7 @@
 
     &__description
         margin-top 40px
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 14px
         color #6a6971
         text-align left
@@ -308,8 +311,9 @@
 
 .ui-make
     background url('../images/make-bg@2x.png') no-repeat 50% 50%
-    background-size cover
+    background-size 100% 100%
     padding 200px 0
+    position relative
 
     &__option
         border 7px solid rgba(255, 255, 255, 0.1)
@@ -322,7 +326,7 @@
 
     span
         padding-left 10px
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 14px
         color #84d030
         line-height 24px
@@ -355,7 +359,7 @@
         align-items center
 
     &__client
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 16px
         color #6a6971
         line-height 60px
@@ -365,7 +369,7 @@
             font-weight lighter
 
     &__works
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 17px
         color #6a6971
         line-height 60px
@@ -390,7 +394,7 @@
     cursor pointer
 
     span
-        font-family 'OpenSans'
+        font-family 'Open Sans'
         font-size 14px
         color #6a6971
         line-height 31px
@@ -407,7 +411,7 @@
     justify-content center
     align-items center
     flex-direction column
-    font-family 'OpenSans'
+    font-family 'Open Sans'
     font-size 56px
     color #6a6971
     line-height 31px
@@ -417,7 +421,7 @@
 
 .ui-users
     background url('../images/portfolio/detail/users-bg.png') no-repeat 65% 50%
-    font-family 'OpenSans'
+    font-family 'Open Sans'
     font-size 56px
     color #fff
     line-height 31px
@@ -431,3 +435,84 @@
         font-size 14px
         line-height 20px
         padding 10px 0
+
+.ui-make-slider
+    position relative
+
+    &__nav
+        position absolute
+        top 151px
+        display flex
+        justify-content space-between
+
+    &__arrow
+        position relative
+        z-index 10
+        margin 0 45px
+        cursor pointer
+
+    &__dots
+        position absolute
+        width 50%
+        left 50%
+        top 537px
+        padding-left 230px
+        overflow hidden
+        display none
+
+        &--cooperation
+            top 657px
+
+        @media(min-width: 1430px)
+            display flex
+
+    &__content
+        width auto !important
+        margin 0 auto
+
+.ui-make-slider-dot
+    position relative
+    flex 1 0 auto
+
+    &:before
+        content ''
+        display block
+        width 50%
+        left 0
+        border 1px solid #8b77a1
+        position absolute
+        top 6px
+
+    &:not(:last-child):after
+        content ''
+        display block
+        width 50%
+        right 0
+        border 1px solid #8b77a1
+        position absolute
+        top 6px
+
+    i
+        background #fff
+        width 13px
+        height 13px
+        border-radius 50%
+        background #fff
+        display block
+        margin 0 auto
+        position relative
+        z-index 6
+
+    span
+        font-size 16px
+        color #aea2be
+        font-family 'Open Sans'
+        text-transform uppercase
+        text-align center
+        display block
+        line-height 23px
+        margin-top 15px
+
+    &.active
+        i
+            background #85db26
