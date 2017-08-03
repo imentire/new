@@ -16,7 +16,7 @@ block content
                     .ui-description.ui-description--md 
                         span Инструмент для автоматизации бизнеса. #[br]#[br]
                         |#{' '}  Мы занимаемся разработкой программ для IOS с 2010 года и знаем, как делать приложения, которые не только нравяться людям, но и приносят реальные, измеримые результаты
-                    a.ui-button.ui-button--md.ui-button--green Оставить заявку
+                    a.ui-button.ui-button--md.ui-button--green.js-open-popup(href="#i-request") Оставить заявку
     .ui-order
         .l-grid.l-grid--container
             .l-row
@@ -168,7 +168,7 @@ block content
                                         .ui-option__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
-                    a.ui-button.ui-button--default.ui-button--blue Начать сотрудничать
+                    a.ui-button.ui-button--default.ui-button--blue.js-open-popup(href="#i-request") Начать сотрудничать
     .ui-development
         .l-grid.l-grid--container
             .l-row
@@ -230,6 +230,6 @@ block content
                         .ui-work-cart__description IOS app
             .l-row.l-row--xs-center
                 .l-col.l-col--xs-12.l-col--md-4.h-text--xs-center
-                    a.ui-button.ui-button--transparentgrey.ui-button--default
+                    a.ui-button.ui-button--transparentgrey.ui-button--default(href="/portfolio/")
                         img(src="/images/icon/work.png") 
                         span Посмотреть все работы

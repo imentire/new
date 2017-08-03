@@ -52,7 +52,7 @@ body.ui-page
                                 .ui-menu__item
                                     a.ui-menu__link(href="/contact/") Контакты
                 .l-col.l-col--xs-12.l-col--md-3
-                    a.ui-button.ui-button--transparent.ui-button--block
+                    a.ui-button.ui-button--transparent.ui-button--block.js-open-popup(href="#i-feedback")
                         img(src="/images/icon/mail.png") 
                         span Свяжитесь с нами
 
@@ -71,19 +71,28 @@ body.ui-page
                 .l-col.l-col--xs-12.h-text--xs-center
                     form.ui-form-request
                         .l-grid.l-grid--container
-                            .l-row.l-row--xs-center
+                            .l-row.l-row--xs-center.js-request-error
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--error
+                            .l-row.l-row--xs-center.js-request-form
                                 .l-col.l-col--xs-12.l-col--md-4
-                                    input.ui-input.ui-input--default(type="text", placeholder="Ваше имя")
+                                    input.ui-input.ui-input--default.js-request-field-name(type="text", name="name", placeholder="Ваше имя")
                                 .l-col.l-col--xs-12.l-col--md-4
-                                    input.ui-input.ui-input--default(type="text", placeholder="Ваш e-mail")
+                                    input.ui-input.ui-input--default.js-request-field-email(type="text", name="email", placeholder="Ваш e-mail")
                                 .l-col.l-col--xs-12.l-col--md-4
-                                    input.ui-input.ui-input--default(type="text", placeholder="Номер телефона")
+                                    input.ui-input.ui-input--default.js-request-field-phone(type="text", name="phone", placeholder="Номер телефона")
+                            .l-row.l-row--xs-center.js-request-success
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--success Ваша заявка успешно отправлена
+
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
-                    a.ui-button.ui-button--default.ui-button--green Отправить заявку
+                    a.ui-button.ui-button--default.ui-button--green.js-request-button Отправить заявку
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
                     .ui-footer__copyright Все права защищены. © 2017 Company Name
+
+    include popup
 
     block scripts
         script(src= baseUrl + 'scripts/main.js')

@@ -1,0 +1,70 @@
+.ui-modal.mfp-hide#i-feedback
+    .ui-modal__header Задайте ваш вопрос
+    .ui-modal__content
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    .ui-modal__text Напишите нам и мы свяжемся с Вами
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    form.ui-form-modal
+                        .l-grid.l-grid--container
+                            .l-row.l-row--xs-center.js-contact-error
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--error
+                            .l-row.l-row--xs-center.js-contact-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--bg.js-contact-field-name(type="text", name="name", placeholder="Ваше имя", style="background-image: url('/images/icon/name.png')")
+                            .l-row.l-row--xs-center.js-contact-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--bg.ui-input--column.js-contact-field-email(type="text", name="email", placeholder="Ваш e-mail", style="background-image: url('/images/icon/e-mail.png')")
+                            .l-row.l-row--xs-center.js-contact-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--bg.ui-input--column.js-contact-field-phone(type="text", name="phone", placeholder="Номер телефона", style="background-image: url('/images/icon/phone.png')")
+                            .l-row.js-contact-form
+                                .l-col.l-col--xs-12
+                                    textarea.ui-textarea.ui-textarea--default.js-contact-field-text(type="text", name="text", placeholder="Опишите ваш вопрос", style="background-image: url('/images/icon/mail.png')")
+                                    
+                            .l-row.l-row--xs-center.js-contact-success
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--success Ваша вопрос успешно отправлен
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    a.ui-button.ui-button--default.ui-button--green.ui-button--column.js-contact-button Отправить
+
+.ui-modal.mfp-hide#i-request
+    .ui-modal__header Оставить заявку
+    .ui-modal__content
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    .ui-modal__text Напишите нам и мы свяжемся с Вами
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    form.ui-form-modal
+                        .l-grid.l-grid--container
+                            .l-row.l-row--xs-center.js-cooperation-error
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--error
+                            .l-row.l-row--xs-center.js-cooperation-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--bg.js-cooperation-field-name(type="text", name="name", placeholder="Ваше имя", style="background-image: url('/images/icon/name.png')")
+                            .l-row.l-row--xs-center.js-cooperation-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--bg.ui-input--column.js-cooperation-field-email(type="text", name="email", placeholder="Ваш e-mail", style="background-image: url('/images/icon/e-mail.png')")
+                            .l-row.l-row--xs-center.js-cooperation-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--bg.ui-input--column.js-cooperation-field-phone(type="text", name="phone", placeholder="Номер телефона", style="background-image: url('/images/icon/phone.png')")
+
+                            .l-row.l-row--xs-center.js-cooperation-success
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--success Ваша вопрос успешно отправлен
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    a.ui-button.ui-button--default.ui-button--green.ui-button--column.js-cooperation-button Отправить

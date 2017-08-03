@@ -7,6 +7,9 @@
     text-align center
     bottom 0
     display inline-block
+    transition all .2s ease
+    text-decoration none
+    outline 0
 
     &--default
         padding 10px 25px 11px
@@ -36,6 +39,12 @@
         justify-content center
         padding 8px 25px 9px
         border 2px solid #676ea0
+        text-decoration none
+
+        &:focus
+            outline 0
+            color #fff
+            text-decoration none
 
         span
             color #fff
@@ -47,23 +56,40 @@
         display flex
         align-items center
         justify-content center
+        text-decoration none
+
+        &:focus
+            outline 0
+            color #fff
+            text-decoration none
 
         span
             color #6a6971
             padding-left 10px
 
     &--green
-        background-image linear-gradient(#5fa315 0%, #80d325 100%)
+        background-image linear-gradient(to bottom, #5fa315 0%, #80d325 100%)
         color #fff
 
+        &:hover
+        &:focus
+            background-image linear-gradient(to bottom, #4e9204 0%, #70c214 100%)
+
     &--blue
-        background-image linear-gradient(#2956ba 0%, #2572d3 100%)
+        background-image linear-gradient(to bottom, #2956ba 0%, #2572d3 100%)
         color #fff
         transition all .2s ease
+
+        &:hover
+        &:focus
+            background-image linear-gradient(to bottom, #1245a9 0%, #1461c2 100%)
 
     &--block
         display flex
         align-items center
+
+    &--column
+        margin-top 27px
 
     &--price
         text-decoration none

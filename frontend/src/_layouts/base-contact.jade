@@ -55,7 +55,7 @@ body.ui-page
                                     .ui-menu__item
                                         a.ui-menu__link(href="/contact/") Контакты
                     .l-col.l-col--xs-12.l-col--md-3
-                        a.ui-button.ui-button--transparentgrey.ui-button--block
+                        a.ui-button.ui-button--transparentgrey.ui-button--block.js-open-popup(href="#i-feedback")
                             img(src="/images/icon/mail.png") 
                             span Свяжитесь с нами
 
@@ -75,19 +75,26 @@ body.ui-page
                     .l-col.l-col--xs-12.h-text--xs-center
                         form.ui-form-relations
                             .l-grid.l-grid--container
-                                .l-row.l-row--xs-center
-                                    .l-col.l-col--xs-12.l-col--md-4
-                                        input.ui-input.ui-input--default.ui-input--bg(type="text", placeholder="Ваше имя", style="background-image: url('/images/icon/name.png')")
-                                    .l-col.l-col--xs-12.l-col--md-4
-                                        input.ui-input.ui-input--default.ui-input--bg(type="text", placeholder="Ваш e-mail", style="background-image: url('/images/icon/e-mail.png')")
-                                    .l-col.l-col--xs-12.l-col--md-4
-                                        input.ui-input.ui-input--default.ui-input--bg(type="text", placeholder="Номер телефона", style="background-image: url('/images/icon/phone.png')")
-                                .l-row
+                                .l-row.l-row--xs-center.js-feedback-error
                                     .l-col.l-col--xs-12
-                                        textarea.ui-textarea.ui-textarea--default(type="text", placeholder="Опишите ваш вопрос", style="background-image: url('/images/icon/mail.png')")
+                                        .ui-alert.ui-alert--error
+                                .l-row.l-row--xs-center.js-feedback-form
+                                    .l-col.l-col--xs-12.l-col--md-4
+                                        input.ui-input.ui-input--default.ui-input--bg.js-feedback-field-name(type="text", name="name", placeholder="Ваше имя", style="background-image: url('/images/icon/name.png')")
+                                    .l-col.l-col--xs-12.l-col--md-4
+                                        input.ui-input.ui-input--default.ui-input--bg.js-feedback-field-email(type="text", name="email", placeholder="Ваш e-mail", style="background-image: url('/images/icon/e-mail.png')")
+                                    .l-col.l-col--xs-12.l-col--md-4
+                                        input.ui-input.ui-input--default.ui-input--bg.js-feedback-field-phone(type="text", name="phone", placeholder="Номер телефона", style="background-image: url('/images/icon/phone.png')")
+                                .l-row.js-feedback-form
+                                    .l-col.l-col--xs-12
+                                        textarea.ui-textarea.ui-textarea--default.js-feedback-field-text(type="text", name="text", placeholder="Опишите ваш вопрос", style="background-image: url('/images/icon/mail.png')")
+                                        
+                                .l-row.l-row--xs-center.js-feedback-success
+                                    .l-col.l-col--xs-12
+                                        .ui-alert.ui-alert--success Ваша вопрос успешно отправлен
                 .l-row
                     .l-col.l-col--xs-12.h-text--xs-center
-                        a.ui-button.ui-button--default.ui-button--green Задать вопрос
+                        a.ui-button.ui-button--default.ui-button--green.js-feedback-button Задать вопрос
         .ui-news
             .l-grid.l-grid--container
                 .l-row
@@ -107,6 +114,8 @@ body.ui-page
                                 img(src="/images/news/3.png")
                             .ui-news-cart__text LOREM INPUT ALIMNI #[br] IPSUM DOLOR SIR AMET
         .ui-footer-contact__copyright.ui-footer__copyright--contact Все права защищены. © 2017 Company Name
+
+    include popup
 
     block scripts
         script(src= baseUrl + 'scripts/main.js')
