@@ -17,10 +17,16 @@
             top 0
             border-top 1px solid #edf1fb
             border-bottom 1px solid #edf1fb
-            border-right 1px solid rgba(255, 255, 255, 0)
-            border-left 1px solid rgba(255, 255, 255, 0)
+            border-right 1px solid #edf1fb
+            border-left 1px solid #edf1fb
             transition all .2s ease
             background-position top right
+            border-radius 10px
+
+            @media(min-width: 544px)
+                border-right 1px solid rgba(255, 255, 255, 0)
+                border-left 1px solid rgba(255, 255, 255, 0)
+                border-radius 0
 
         &:before
             content ''
@@ -65,12 +71,14 @@
         &--first
             &:after
                 border-left 1px solid #edf1fb
-                border-radius 10px 0 0 10px
+                border-top-left-radius 10px
+                border-bottom-left-radius 10px
 
         &--last
             &:after
                 border-right 1px solid #edf1fb
-                border-radius 0 10px 10px 0
+                border-top-right-radius 10px
+                border-bottom-right-radius 10px
 
             &:before
                 display none
