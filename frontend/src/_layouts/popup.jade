@@ -4,7 +4,7 @@
         .l-grid.l-grid--container
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
-                    
+
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
                     .ui-modal__text Напишите нам и мы свяжемся с Вами
@@ -27,10 +27,10 @@
                             .l-row.js-contact-form
                                 .l-col.l-col--xs-12
                                     textarea.ui-textarea.ui-textarea--default.js-contact-field-text(type="text", name="text", placeholder="Опишите ваш вопрос", style="background-image: url('/images/icon/mail.png')")
-                                    
+
                             .l-row.l-row--xs-center.js-contact-success
                                 .l-col.l-col--xs-12
-                                    .ui-alert.ui-alert--success Ваша вопрос успешно отправлен
+                                    .ui-alert.ui-alert--success Ваш вопрос успешно отправлен
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
                     a.ui-button.ui-button--default.ui-button--green.ui-button--column.js-contact-button Отправить
@@ -41,7 +41,7 @@
         .l-grid.l-grid--container
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
-                    
+
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
                     .ui-modal__text Напишите нам и мы свяжемся с Вами
@@ -64,7 +64,41 @@
 
                             .l-row.l-row--xs-center.js-cooperation-success
                                 .l-col.l-col--xs-12
-                                    .ui-alert.ui-alert--success Ваша вопрос успешно отправлен
+                                    .ui-alert.ui-alert--success Ваша заявка успешно отправлена
             .l-row
                 .l-col.l-col--xs-12.h-text--xs-center
                     a.ui-button.ui-button--default.ui-button--green.ui-button--column.js-cooperation-button Отправить
+
+.ui-modal.mfp-hide#i-callback
+    .ui-modal__header Хотите, перезвоним вам прямо сейчас?
+    .ui-modal__content
+        .l-grid.l-grid--container
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    .ui-modal__text Напишите нам и мы свяжемся с Вами
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    form.ui-form-modal
+                        .l-grid.l-grid--container
+                            .l-row.l-row--xs-center.js-callback-error
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--error
+                            .l-row.l-row--xs-center.js-callback-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.js-callback-field-name(type="text", name="name", placeholder="Ваше имя")
+                            .l-row.l-row--xs-center.js-callback-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--column.js-callback-field-phone(type="text", name="phone", placeholder="Номер телефона")
+                            .l-row.l-row--xs-center.js-callback-form
+                                .l-col.l-col--xs-12
+                                    input.ui-input.ui-input--default.ui-input--column.js-callback-field-time(type="text", name="time", placeholder="Удобное время")
+
+                            .l-row.l-row--xs-center.js-callback-success
+                                .l-col.l-col--xs-12
+                                    .ui-alert.ui-alert--success Ваша заявка успешно отправлена
+            .l-row
+                .l-col.l-col--xs-12.h-text--xs-center
+                    a.ui-button.ui-button--default.ui-button--green.ui-button--column.js-callback-button Отправить

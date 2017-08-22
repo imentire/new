@@ -7,7 +7,7 @@
     text-align center
     bottom 0
     display inline-block
-    transition all .2s ease
+    transition all .17s ease-in-out
     text-decoration none
     outline 0
 
@@ -32,6 +32,9 @@
         @media(max-width: 544px)
             margin-right 0
             width 100%
+
+        &[data-state="active"]
+            border: 2px solid #8684ae;
 
     &--transparent
         display flex
@@ -90,6 +93,14 @@
 
     &--column
         margin-top 27px
+
+    &--xs-column
+        margin-top 27px
+
+    &--md-row
+
+        @media(min-width: 768px)
+            margin-top 0
 
     &--price
         text-decoration none

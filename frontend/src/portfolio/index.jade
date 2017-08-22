@@ -15,62 +15,62 @@ block content
                     .ui-description.ui-description--md.ui-description--grey Lorem ipsum dolor sit amet, consectetuer adipiscing #[br] elit aenean commodo ligula eget dolor.
             .l-row.ui-filter
                 .l-col.l-col--xs-12.l-col--sm-auto
-                    a.ui-button.ui-button--white Все 
-                    a.ui-button.ui-button--white Мобильные приложения
-                    a.ui-button.ui-button--white Web приложения
-                    a.ui-button.ui-button--white Web сайты
-                    a.ui-button.ui-button--white Api
-            .l-row
-                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center
+                    a.ui-button.ui-button--white.js-portfolio-filter(data-state="active", data-type="all") Все
+                    a.ui-button.ui-button--white.js-portfolio-filter(data-state="", data-type="mobile") Мобильные приложения
+                    a.ui-button.ui-button--white.js-portfolio-filter(data-state="", data-type="web-app") Web приложения
+                    a.ui-button.ui-button--white.js-portfolio-filter(data-state="", data-type="web-site") Web сайты
+                    a.ui-button.ui-button--white.js-portfolio-filter(data-state="", data-type="api") Api
+            .l-row.js-portfolio
+                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center(data-type="mobile")
                     .ui-project-cart
                         .ui-project-cart__content
-                            img.ui-image.ui-image--responsive(src="/images/portfolio/1.png") 
+                            img.ui-image.ui-image--responsive(src="/images/portfolio/1.png")
                             .ui-project-cart__teg
                                 span # Мобильные приложения
                             .ui-project-cart__description
                                 .ui-project-cart__title Название проекта
                                 .ui-project-cart__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center
+                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center(data-type="web-site")
                     .ui-project-cart
                         .ui-project-cart__content
-                            img.ui-image.ui-image--responsive(src="/images/portfolio/2.png") 
+                            img.ui-image.ui-image--responsive(src="/images/portfolio/2.png")
                             .ui-project-cart__teg
                                 span # Web сайт
                             .ui-project-cart__description
                                 .ui-project-cart__title Название проекта
                                 .ui-project-cart__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center
+                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center(data-type="web-site, api")
                     .ui-project-cart
                         .ui-project-cart__content
-                            img.ui-image.ui-image--responsive(src="/images/portfolio/3.png") 
+                            img.ui-image.ui-image--responsive(src="/images/portfolio/3.png")
                             .ui-project-cart__teg
                                 span # Web сайт
                                 span # Api
                             .ui-project-cart__description
                                 .ui-project-cart__title Название проекта
                                 .ui-project-cart__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center
+                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center(data-type="mobile")
                     .ui-project-cart
                         .ui-project-cart__content
-                            img.ui-image.ui-image--responsive(src="/images/portfolio/1.png") 
+                            img.ui-image.ui-image--responsive(src="/images/portfolio/1.png")
                             .ui-project-cart__teg
                                 span # Мобильные приложения
                             .ui-project-cart__description
                                 .ui-project-cart__title Название проекта
                                 .ui-project-cart__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center
+                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center(data-type="web-site")
                     .ui-project-cart
                         .ui-project-cart__content
-                            img.ui-image.ui-image--responsive(src="/images/portfolio/2.png") 
+                            img.ui-image.ui-image--responsive(src="/images/portfolio/2.png")
                             .ui-project-cart__teg
                                 span # Web сайт
                             .ui-project-cart__description
                                 .ui-project-cart__title Название проекта
                                 .ui-project-cart__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center
+                .l-col.l-col--xs-12.l-col--md-6.l-col--lg-4.h-text--xs-center(data-type="web-site, api")
                     .ui-project-cart
                         .ui-project-cart__content
-                            img.ui-image.ui-image--responsive(src="/images/portfolio/3.png") 
+                            img.ui-image.ui-image--responsive(src="/images/portfolio/3.png")
                             .ui-project-cart__teg
                                 span # Web сайт
                                 span # Api
